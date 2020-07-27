@@ -7,8 +7,7 @@ file=$(git status --porcelain | sed s/^...//)
 if [[ $file == "" ]]; then
     echo "No files changed."
 else
-
     git add .
     git commit -m ":white_check_mark: $file"
-    # git push
+    git push
 fi
