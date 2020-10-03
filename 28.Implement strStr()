@@ -1,0 +1,25 @@
+# 28.Implement strStr()
+
+## Example 1:
+
+Input: haystack = "hello", needle = "ll"
+Output: 2
+
+## Example 2:
+
+Input: haystack = "aaaaa", needle = "bba"
+Output: -1
+
+## Solution:
+
+```javascript
+/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+var strStr = function(haystack, needle) {
+    if (!needle) return 0;
+    return haystack.indexOf(needle);
+};
+```
